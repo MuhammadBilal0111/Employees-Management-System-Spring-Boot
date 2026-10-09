@@ -112,55 +112,6 @@ See `database/DATABASE_SCHEMA.md` for complete ER diagram and SQL scripts.
    API Docs:   http://localhost:8080/api/v3/api-docs
    ```
 
-## 📚 API Documentation
-
-Complete API documentation is available in `docs/API_DOCUMENTATION.md` or visit Swagger UI at app startup.
-
-### Quick API Examples
-
-**Create Employee**
-```bash
-curl -X POST http://localhost:8080/api/v1/employees \
-  -H "Content-Type: application/json" \
-  -d '{
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john@example.com",
-    "phoneNumber": "1234567890",
-    "salary": 50000.00,
-    "hireDate": "2024-01-15T00:00:00",
-    "position": "Developer",
-    "departmentId": 1
-  }'
-```
-
-**Get All Employees**
-```bash
-curl http://localhost:8080/api/v1/employees
-```
-
-**Get Employee by ID**
-```bash
-curl http://localhost:8080/api/v1/employees/1
-```
-
-**Update Employee**
-```bash
-curl -X PUT http://localhost:8080/api/v1/employees/1 \
-  -H "Content-Type: application/json" \
-  -d '{
-    "firstName": "Jane",
-    "lastName": "Doe",
-    "salary": 55000.00,
-    ...
-  }'
-```
-
-**Delete Employee**
-```bash
-curl -X DELETE http://localhost:8080/api/v1/employees/1
-```
-
 ## 🏗️ Project Structure
 
 ### Models (`com.employeemanagement.models`)
